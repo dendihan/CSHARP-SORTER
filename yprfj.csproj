@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA970C30-9D72-4C4D-AD78-3B30BC5A0BDF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>yprfj</RootNamespace>
+    <AssemblyName>yprfj</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ProjYPR2_Icon2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncTcpServer.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Formin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formin.Designer.cs">
+      <DependentUpon>Formin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formmonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmonitor.Designer.cs">
+      <DependentUpon>Formmonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formparam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formparam.Designer.cs">
+      <DependentUpon>Formparam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formparaminedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formparaminedit.Designer.cs">
+      <DependentUpon>Formparaminedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formparamoutedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formparamoutedit.Designer.cs">
+      <DependentUpon>Formparamoutedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formout.designer.cs">
+      <DependentUpon>Formout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formpermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formpermission.designer.cs">
+      <DependentUpon>Formpermission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formproper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formproper.Designer.cs">
+      <DependentUpon>Formproper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formdatacompute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formdatacompute.Designer.cs">
+      <DependentUpon>Formdatacompute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formerrorlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formerrorlog.designer.cs">
+      <DependentUpon>Formerrorlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formgetdata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formgetdata.designer.cs">
+      <DependentUpon>Formgetdata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlogin.Designer.cs">
+      <DependentUpon>Formlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formmain.Designer.cs">
+      <DependentUpon>Formmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formproperedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formproperedit.Designer.cs">
+      <DependentUpon>Formproperedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formrole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formrole.designer.cs">
+      <DependentUpon>Formrole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formroleedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formroleedit.designer.cs">
+      <DependentUpon>Formroleedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formshowcol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formshowcol.Designer.cs">
+      <DependentUpon>Formshowcol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formuser.Designer.cs">
+      <DependentUpon>Formuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formuseredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formuseredit.Designer.cs">
+      <DependentUpon>Formuseredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formuserlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formuserlog.designer.cs">
+      <DependentUpon>Formuserlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TcpClientConnectedEventArgs.cs" />
+    <Compile Include="TcpClientDisconnectedEventArgs.cs" />
+    <Compile Include="TcpClientState.cs" />
+    <Compile Include="TcpDatagramReceivedEventArgs.cs" />
+    <EmbeddedResource Include="Formdatacompute.resx">
+      <DependentUpon>Formdatacompute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formerrorlog.resx">
+      <DependentUpon>Formerrorlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formgetdata.resx">
+      <DependentUpon>Formgetdata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formin.resx">
+      <DependentUpon>Formin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlogin.resx">
+      <DependentUpon>Formlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmain.resx">
+      <DependentUpon>Formmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formmonitor.resx">
+      <DependentUpon>Formmonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formparam.resx">
+      <DependentUpon>Formparam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formparaminedit.resx">
+      <DependentUpon>Formparaminedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formparamoutedit.resx">
+      <DependentUpon>Formparamoutedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formout.resx">
+      <DependentUpon>Formout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formpermission.resx">
+      <DependentUpon>Formpermission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formproper.resx">
+      <DependentUpon>Formproper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formproperedit.resx">
+      <DependentUpon>Formproperedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formrole.resx">
+      <DependentUpon>Formrole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formroleedit.resx">
+      <DependentUpon>Formroleedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formshowcol.resx">
+      <DependentUpon>Formshowcol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formuser.resx">
+      <DependentUpon>Formuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formuseredit.resx">
+      <DependentUpon>Formuseredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formuserlog.resx">
+      <DependentUpon>Formuserlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\202.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\168.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77758PICW2U.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huguangshanse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="OPCAutomation">
+      <Guid>{6E6170F6-FF2D-11D2-8087-00105AA8F840}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>False</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ProjYPR2_Icon2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
